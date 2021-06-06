@@ -142,7 +142,12 @@
     <Compile Include="Migrations\202106060836096_Create_Table_Sinhviens.Designer.cs">
       <DependentUpon>202106060836096_Create_Table_Sinhviens.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202106060849101_Create_Table_Account.cs" />
+    <Compile Include="Migrations\202106060849101_Create_Table_Account.Designer.cs">
+      <DependentUpon>202106060849101_Create_Table_Account.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Account.cs" />
     <Compile Include="Models\C__MigrationHistory.cs" />
     <Compile Include="Models\LopHoc.cs" />
     <Compile Include="Models\LTQLDbContext.cs" />
@@ -218,6 +223,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202106060836096_Create_Table_Sinhviens.resx">
       <DependentUpon>202106060836096_Create_Table_Sinhviens.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106060849101_Create_Table_Account.resx">
+      <DependentUpon>202106060849101_Create_Table_Account.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
