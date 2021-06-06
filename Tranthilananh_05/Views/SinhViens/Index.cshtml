@@ -1,0 +1,46 @@
+﻿@model IEnumerable<Tranthilananh_05.Models.SinhVien>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Masinhvien)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tensinhvien)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Malop)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+    <th>
+        @Html.DisplayFor(model => item.Masinhvien)
+    </th>
+    <td>
+        @Html.DisplayFor(modelItem => item.Tensinhvien)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Malop)
+    </td>
+    <td>
+        @Html.ActionLink("Edit", "Edit", new { id = item.Masinhvien }) |
+        @Html.ActionLink("Details", "Details", new { id = item.Masinhvien }) |
+        @Html.ActionLink("Delete", "Delete", new { id = item.Masinhvien })
+    </td>
+</tr>
+}
+
+</table>
