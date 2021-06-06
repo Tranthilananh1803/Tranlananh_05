@@ -15,6 +15,7 @@ namespace Tranthilananh_05.Models
         public virtual DbSet<C__MigrationHistory> C__MigrationHistory { get; set; }
         public virtual DbSet<LopHoc> LopHocs { get; set; }
         public virtual DbSet<SinhVien> SinhViens { get; set; }
+        public virtual DbSet<Account> Accounts { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
         }

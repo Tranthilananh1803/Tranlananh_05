@@ -13,7 +13,7 @@ namespace Tranthilananh_05.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202106060849101_Create_Table_Account"; }
+            get { return "202106060850210_Create_Table_Account"; }
         }
         
         string IMigrationMetadata.Source
